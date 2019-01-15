@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+    .miparrafo{
+        color: red;
+    }
+    </style>
+
+
+    <script src="main.js"></script>
+
+    <script>
+       //alert("Mensaje alert");
+
+       //var nombre = "Juan Perez";
+       //nombre = "Maria";
+       //alert("El nombre de la persona es: " + nombre);
+
+      // nombre= prompt("Escriba su nombre", "Nombre");
+
+       // document.write("<h1>" + nombre + "</h1>");
+
+       //Definiendo un arreglo.
+       //var personas = ["Juan","Josefina","Duarte"];
+       //var personas1 = ["Linares","Nelson","Evelyn"];
+
+        //Conocer el total elementos de un arreglo.
+       //var totalPersonas = personas.length;
+        
+       //Para concatenar arreglos.
+      // var personaspersonas = personas.concat(personas1);
+        //Permite ordenar items en el arreglo.
+    //    var ordenarpersonas = personaspersonas.sort();
+    //     document.write(personaspersonas.join(" : "));
+
+        //Ejemlos usando if ..... else;
+        // var edad = 0;
+        // var condicion;
+        // edad = prompt("Digite su edad");
+        // if (edad < 18)
+        // condicion = "Adolescente";
+        // else if (edad >= 18 && edad <=40) {
+        //     condicion="Adulto";
+        // }
+        // else{
+        //     condicion = "Viejo";
+        // }
+
+         var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre"];
+
+         for (var i=0; i<= meses.length; i++)
+         {
+             console.log(meses[i]);
+         }
+            
+
+           
+
+
+
+
+
+
+
+
+
+
+
+        // var mesesVocales = [];
+
+        // for(var i = 0; i<= meses.length-1; i++){
+        //     //alert(meses[i].length);
+        //     for(var ii = 1; ii <= meses[i].length; ii++){
+        //         console.log(meses[i].substring(ii));
+        //     }
+
+        //     //console.log(meses[i]);
+        // }
+
+        // var fecha = new Date();
+        
+        // DOM
+
+        // console.log(fecha);
+        // meses.forEach(function(mes) {
+        //     console.log(mes);
+        // });
+            // function suma(num1, num2){
+            //     return num1 + num2;
+
+            // };
+
+            //var num1 = prompt("Digite numero uno");
+            //var num2 = prompt("Digite el numero 2");
+            // var resultado = suma(parseInt(num1), parseInt(num2));
+            
+            // num1 = parseInt(num1);
+            // num2 = parseInt(num2);           
+
+            // var resultado = suma(num1, num2);
+
+
+
+
+            
+
+    </script>
+</head>
+<body>
+    <h1 id="miH1">CURSO DE HTML</h1>
+    <input id="valor" type="number"
+        placeholder="Escribe un numero"></input>
+
+
+    <input id="valor2" type="number"
+    placeholder="Escribe otro numero"></input>
+
+    <button onclick="suma()" >Sumar</button>
+    <br>
+    <label id="resultado"></label>
+
+
+    <table id="miTabla"></table>
+
+
+
+
+
+
+
+
+
+
+
+
+    <p class="miparrafo">
+        Probando diferencia entre <strong>innerHTML</strong> y innterText.
+    </p>
+
+    <a id="enlace" href="google.com" title="Google">Click aqui</a>
+
+    <script>
+        var miencabezado = document.getElementById("miH1");
+
+        var parrafo = document.getElementsByTagName("p");
+
+        var parraforojo = document.getElementsByClassName("miparrafo");
+        parrafo[0].innerHTML ="vaot";
+        var mienlace = document.getElementById("enlace");
+        
+        
+
+       var misuma = function suma(){
+            var valor1 = document.getElementById("valor").value;
+            var valor2 = document.getElementById("valor2").value;
+
+            var resultado = 
+            (parseFloat(valor1) + parseFloat(valor2)).toFixed(2);
+
+            document.getElementById("resultado").innerHTML = resultado;
+            //definir un color.. 
+            document.getElementById("resultado").style.color = "blue";
+            //document.getElementById("resultado") = "blue";
+
+
+
+                //return valor1 + valor2;
+
+            };
+
+            var datos = [
+                {
+                "id" : 1,
+                "nombre" : "Juan",
+                "apellidos" : "Perez",
+                "sexo" : "Masculino"                
+                },
+                {
+                "id" : 2,
+                "nombre" : "Maria",
+                "apellidos" : "Duarte",
+                "sexo" : "Femenino"
+                }
+            ];
+
+       var tabla = "<tr>" +
+                    "<th>ID</th>" +
+                    "<th>Nombre</th>" +
+                    "<th>Apellido</th>" +
+                    "<th>Sexo</th>" +
+                    "</tr>";
+        
+        for (var i = 0; i < datos.length; i++)
+        {
+            tabla = tabla +
+            "<tr>" +
+                "<td>" + datos[i].id + "</td>" +
+                "<td>" + datos[i].nombre + "</td>" +
+                "<td>" + datos[i].apellidos + "</td>" +
+                "<td>" + datos[i].sexo + "</td>" +
+            "</tr>";
+        }
+            document.getElementById("miTabla").innerHTML = tabla;        
+
+    </script>
+</body>
+</html>
