@@ -1,0 +1,37 @@
+[
+    {
+        "nombre" : "Luis Manuel",
+        "apellidos" : "Calderon Betances",
+        "imagen" : "LuisManuel",
+        "nombreProyecto" : "",
+        "linkProyecto" : ""
+    },
+    {
+        "nombre" : "Heriberto Manuel",
+        "apellidos" : "Pérez Jiménez",
+        "imagen" : "HeribertoManuel.jpg",
+        "nombreProyecto" : "",
+        "linkProyecto" : ""
+    },
+    {
+        "nombre" : "Elfry Fabián",
+        "apellidos" : "Ortega Reyes",
+        "imagen" : "ElfryOrtega.jpg",
+        "nombreProyecto" : "",
+        "linkProyecto" : ""
+    },
+    {
+        "nombre" : "Esteban Stalin",
+        "apellidos" : "Mena Baldera",
+        "imagen" : "EstebanMena,jpg",
+        "nombreProyecto" : "",
+        "linkProyecto" : ""
+    },
+    {
+        "nombre" : "Yolppy Amed",
+        "apellidos" : "María Blanco",
+        "imagen" : "YolppyMaria.jpg",
+        "nombreProyecto" : "",
+        "linkProyecto" : ""
+    }
+]
