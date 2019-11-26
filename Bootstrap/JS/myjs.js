@@ -18,7 +18,7 @@ $(document).ready(function () {
 
             p +=
                 "<div class='col-md-3'>" +
-                "<div class='text-center border rounded shadow p-3 mb-5 bg-white'>" +
+                "<div class='text-center border rounded shadow mb-5 bg-white'>" +
                 "<img src='../Bootstrap/images/participantes/user.png' alt='' class='img-fluid imgParticipante'>" +
                 "<p>" + value.nombre + "</p>" +
                 "<h5 class='text-uppercase'>"+value.apellidos+"</h5></div></div>";
